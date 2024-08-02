@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrizzlyBear - Menu</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="shortcut icon" href="./images/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="./images/GBIcon.png" alt=""></li>
+        </ul>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./order.html">ORDER</a></li>
+        </ul>
+    </nav>
+    <header style="background-image: url(./images/banner4.jpg); background-position: center;">
+        <section class="Banner">
+            <div class="BannerFrame">
+                <h1>Order our</h1>
+                <h1><span>Food</span> Online!</h1>
+                <br>
+            </div>
+        </section>
+    </header>
+    <section class="OrderFrame">
+        <aside class="textframe">
+            <div class="text">
+                <h1 style="text-align: center;">Your <span>Cart</span></h1>
+                <ul id="cart-items">
+                </ul>
+                <p id="Total"></p>
+            </div>
+        </aside>
+        <aside class="img leftanimation">
+            <img src="./images/food3.jpg" alt="">
+        </aside>
+    </section>
+    <section class="OrderFrame">
+        <aside class="img rightanimation">
+            <img src="./images/food4.jpg" alt="">
+        </aside>
+        <aside class="textframe">
+            <div class="text">
+                <h1 style="text-align: center;">Your <span>Information</span></h1>
+                <form id="InfoForm" onsubmit="SuccessAlert()">
+                    <div class="TwoWay">
+                        <aside>
+                            <label for="fname">First Name:</label>
+                            <input type="text" id="fname" name="fname" autocomplete="none" required>
+                        </aside>
+                        <aside>
+                            <label for="phone">Phone Number:</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="none" required>
+                        </aside>
+                    </div>
+                    <br>
+                    <label for="address">Delivery Address:</label>
+                    <input type="text" id="address" name="address" autocomplete="none" required>
+                    <br>
+                    <div class="TwoWay">
+                        <aside>
+                            <label for="city">City:</label>
+                            <input type="text" id="city" name="city" autocomplete="none" required>
+                        </aside>
+                        <aside>
+                            <label for="region">Region:</label>
+                            <input type="text" id="region" name="region" autocomplete="none">
+                        </aside>
+                    </div>
+                    <br>
+                    <div class="TwoWay">
+                        <aside>
+                            <label for="postal">Postal Code:</label>
+                            <input type="number" id="postal" name="postal" autocomplete="none">
+                        </aside>
+                        <aside>
+                            <label for="country">Country:</label>
+                            <input type="text" name="country" id="country" autocomplete="none" required>
+                        </aside>
+                    </div>
+                    <div class="SUBMIT"><button type="submit">SUBMIT</button></div>
+                </form>
+            </div>
+        </aside>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./menu.html">MENU</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./order.html">ORDER</a></li>
+        </ul>
+        <ul>
+        </ul>
+    </footer>
+    <script>
+            document.addEventListener("DOMContentLoaded", () => {
+      displayCartItems();
+    });
+    function displayCartItems() {
+      const cart = JSON.parse(localStorage.getItem("cart")) || [];
+      const cartItemsContainer = document.getElementById("cart-items");
+      const price = document.getElementById("Total");
+      if (cart.length === 0) {
+        cartItemsContainer.innerHTML = "<p style='text-align: center;'>Your cart is empty</p>";
+        return;
+      }
+      cartItemsContainer.innerHTML = cart.map((item, index) => `
+        <div class="cart-item">
+          <li><div>${item.name} (x${item.quantity}) - $${(item.price * item.quantity).toFixed(2)}</div><button onclick="removeCartItem(${index})">X</button></li>
+        </div>
+      `).join("");
+      const totalPrice = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
+      price.innerHTML += `<p class="TotalPrice">Total Price: $${totalPrice.toFixed(2)}</p>`;
+    }
+    function removeCartItem(index) {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    cart.splice(index, 1);
+    localStorage.setItem("cart", JSON.stringify(cart));
+    displayCartItems();
+    }
+
+    function SuccessAlert(){
+        alert("Order Placed Successfully!");    
+    }
+    </script>
+</body>
+</html>

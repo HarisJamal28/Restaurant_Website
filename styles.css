@@ -1,0 +1,1716 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #242424;
+  overflow-x: hidden;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  white-space: nowrap;
+  scroll-snap-type: y mandatory;
+}
+body img {
+  image-rendering: optimizeQuality, optimizeSpeed;
+}
+
+section {
+  scroll-snap-align: center;
+}
+
+.calistoga-regular {
+  font-family: "Calistoga", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.edu-au-vic-wa-nt-hand {
+  font-family: "Edu AU VIC WA NT Hand", cursive;
+  font-optical-sizing: auto;
+  font-weight: 100px;
+  font-style: normal;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CF0A0A;
+  padding: 10px;
+  font-weight: bold;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 1rem;
+}
+nav ul li img {
+  height: 50px;
+  width: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+nav ul li a {
+  color: #EEEEEE;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #101010;
+}
+
+header {
+  height: 100vh;
+  background-image: url(./images/banner.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-position: top;
+}
+header .Banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+}
+header .Banner .BannerFrame {
+  height: 60%;
+  width: 80%;
+  color: #EEEEEE;
+}
+header .Banner .BannerFrame h1 {
+  font-size: 6rem;
+  margin: 0;
+  font-family: Calistoga;
+}
+header .Banner .BannerFrame h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+header .Banner .BannerFrame span {
+  color: #CF0A0A;
+}
+header .Banner .BannerFrame p {
+  margin: 0;
+  color: #DC5F00;
+  font-weight: bold;
+  margin-left: 2%;
+  font-family: Calistoga;
+}
+header .Banner .BannerFrame .subheading {
+  width: 50%;
+  text-wrap: wrap;
+}
+header .Banner .BannerFrame .HolderFrame {
+  margin: 30px;
+  width: 40%;
+  padding: 2%;
+  margin-left: 0;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 30px;
+}
+header .Banner .BannerFrame .HolderFrame button {
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  padding: 20px;
+  background-color: #CF0A0A;
+  border: 0px;
+  font-size: 1rem;
+  font-family: Calistoga;
+  color: white;
+}
+header .Banner .BannerFrame .HolderFrame button i {
+  font-size: 1.3rem;
+}
+header .Banner .BannerFrame .HolderFrame button:hover {
+  cursor: pointer;
+  background-color: #101010;
+}
+header .Banner .BannerFrame .HolderFrame button:hover i {
+  color: #CF0A0A;
+}
+
+.MainFrame {
+  height: 80vh;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid white;
+}
+.MainFrame aside {
+  height: 100%;
+  border: 1px solid blue;
+}
+.MainFrame .Side {
+  height: 100%;
+  width: 100%;
+  font-family: Calistoga;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.MainFrame .Side h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 0;
+}
+.MainFrame .Side h1 span {
+  color: #CF0A0A;
+}
+.MainFrame .Side p {
+  font-size: 1rem;
+  color: white;
+  margin: 0;
+}
+.MainFrame .Side .MenuFrame {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 90%;
+  margin: 20px;
+  border-radius: 20px;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: row;
+  padding: 20px;
+}
+.MainFrame .Side .MenuFrame .card {
+  height: -moz-fit-content;
+  height: fit-content;
+  padding-bottom: 30px;
+  width: 400px;
+  border-radius: 20px;
+  background-color: #181818;
+}
+.MainFrame .Side .MenuFrame .card:hover {
+  background-color: #CF0A0A;
+}
+.MainFrame .Side .MenuFrame .card:hover i {
+  color: white;
+  background-color: #242424;
+}
+.MainFrame .Side .MenuFrame .card .img {
+  border: 0px solid #CF0A0A;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  color: white;
+}
+.MainFrame .Side .MenuFrame .card .img i {
+  border: 0px solid #CF0A0A;
+  color: #CF0A0A;
+  padding: 20px;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  background-color: #EEEEEE;
+}
+.MainFrame .Side .MenuFrame .card h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 0;
+}
+.MainFrame .Side .MenuFrame .card .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.MainFrame .Side .MenuFrame .card .text p {
+  width: 90%;
+  padding: 10px;
+  text-wrap: wrap;
+  font-family: Calistoga;
+  font-size: 1rem;
+}
+
+.NextFrame {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.NextFrame aside {
+  width: 100%;
+  height: 100%;
+}
+.NextFrame .img {
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.NextFrame .img img {
+  height: 80%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.NextFrame .textframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NextFrame .textframe .text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #181818;
+  height: 80%;
+  width: 100%;
+  padding: 30px;
+}
+.NextFrame .textframe .text h1 {
+  width: 80%;
+  text-align: left;
+  color: white;
+  font-size: 3rem;
+  font-family: Calistoga;
+  margin: 0;
+}
+.NextFrame .textframe .text h1 span {
+  color: #CF0A0A;
+}
+.NextFrame .textframe .text p {
+  text-wrap: wrap;
+  font-size: 1rem;
+  width: 80%;
+  font-family: Calistoga;
+  color: white;
+}
+
+.NextFrame2 {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.NextFrame2 .textholder {
+  width: 80%;
+  color: white;
+}
+.NextFrame2 .textholder h1 {
+  font-size: 3rem;
+  font-family: Calistoga;
+  margin: 0;
+}
+.NextFrame2 .textholder p {
+  font-size: 1rem;
+  text-wrap: wrap;
+  width: 50%;
+}
+.NextFrame2 .scrollmenu {
+  width: 80%;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NextFrame2 .scrollmenu .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  animation: slideinL linear;
+  animation-timeline: view();
+  animation-range: 10px 36%;
+}
+.NextFrame2 .scrollmenu .menu .menuitem {
+  background-color: #181818;
+  position: relative;
+  display: flex;
+  box-shadow: 0px 5px 10px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 250px;
+  padding-bottom: 30px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.NextFrame2 .scrollmenu .menu .menuitem:hover {
+  background-color: #242424;
+  border: 0px solid #CF0A0A;
+  transform: rotateY(180deg);
+  transition: 1s ease-in-out;
+  cursor: default;
+}
+.NextFrame2 .scrollmenu .menu .menuitem:hover .img {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 0.56s;
+  transition: 0.5s ease-in;
+}
+.NextFrame2 .scrollmenu .menu .menuitem:hover .menutext {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.65s;
+}
+.NextFrame2 .scrollmenu .menu .menuitem .img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+  opacity: 1;
+  visibility: visible;
+}
+.NextFrame2 .scrollmenu .menu .menuitem .img img {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.NextFrame2 .scrollmenu .menu .menuitem .menutext {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  visibility: 0;
+  opacity: 0;
+}
+.NextFrame2 .scrollmenu .menu .menuitem .menutext h1 {
+  font-family: Calistoga;
+  color: white;
+  font-size: 2rem;
+  transform: rotateY(-180deg);
+  margin-bottom: 0;
+}
+.NextFrame2 .scrollmenu .menu .menuitem .menutext .Commands button {
+  border: 0px;
+  background-color: #DC5F00;
+  color: black;
+  transform: rotateY(-180deg);
+  font-size: 1.1rem;
+  padding: 8px;
+  font-family: Calistoga;
+  color: white;
+  width: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.NextFrame2 .scrollmenu .menu .menuitem .menutext .Commands button:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+.NextFrame2 .scrollmenu .menu .menuitem .menutext .Commands button:hover .menuitem {
+  background-color: #CF0A0A;
+}
+.NextFrame2 .scrollmenu .menu .menuitem .menutext p {
+  padding: 20px;
+  text-wrap: wrap;
+  text-align: justify;
+  font-family: Calistoga;
+  font-size: 0.8rem;
+  transform: rotateY(-180deg);
+  color: white;
+  height: 100%;
+  margin-top: 0;
+  overflow-y: scroll;
+}
+
+.Breakfast {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.Breakfast .BreakfastFrame {
+  width: 80%;
+  height: 90%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: slideinL linear;
+  animation-timeline: view();
+  animation-range: 10px 36%;
+}
+.Breakfast .BreakfastFrame .menuitem {
+  height: 200px;
+  width: 250px;
+  background-color: #101010;
+  box-shadow: 0px 5px 10px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  cursor: default;
+}
+.Breakfast .BreakfastFrame .menuitem:hover {
+  background-color: #242424;
+  border: 0px solid #CF0A0A;
+  transform: rotateY(180deg);
+  transition: 1s ease-in-out;
+}
+.Breakfast .BreakfastFrame .menuitem:hover .foodframe {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 0.59s;
+  transition: 0.5s ease-in;
+}
+.Breakfast .BreakfastFrame .menuitem:hover .menutext {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.65s;
+}
+.Breakfast .BreakfastFrame .menuitem .foodframe {
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.Breakfast .BreakfastFrame .menuitem .foodframe img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Breakfast .BreakfastFrame .menuitem .menutext {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  visibility: 0;
+  opacity: 0;
+}
+.Breakfast .BreakfastFrame .menuitem .menutext h1 {
+  font-family: Calistoga;
+  color: white;
+  font-size: 1.5rem;
+  transform: rotateY(-180deg);
+  margin-bottom: 0;
+  overflow-x: scroll;
+}
+.Breakfast .BreakfastFrame .menuitem .menutext .Commands button {
+  border: 0px;
+  background-color: #DC5F00;
+  color: black;
+  transform: rotateY(-180deg);
+  font-size: 1.1rem;
+  padding: 8px;
+  font-family: Calistoga;
+  color: white;
+  width: 200px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.Breakfast .BreakfastFrame .menuitem .menutext .Commands button:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+.Breakfast .BreakfastFrame .menuitem .menutext p {
+  padding: 20px;
+  text-wrap: wrap;
+  text-align: justify;
+  font-family: Calistoga;
+  font-size: 0.8rem;
+  transform: rotateY(-180deg);
+  color: white;
+  height: 100px;
+  margin-top: 0;
+  overflow-y: scroll;
+}
+
+.Lunch {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  background-color: #101010;
+}
+.Lunch .LunchFrame {
+  width: 80%;
+  height: 90%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: slideinL linear;
+  animation-timeline: view();
+  animation-range: 10px 36%;
+}
+.Lunch .LunchFrame .menuitem {
+  height: 200px;
+  width: 250px;
+  background-color: #101010;
+  box-shadow: 0px 5px 10px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  cursor: default;
+}
+.Lunch .LunchFrame .menuitem:hover {
+  background-color: #242424;
+  border: 0px solid #CF0A0A;
+  transform: rotateY(180deg);
+  transition: 1s ease-in-out;
+}
+.Lunch .LunchFrame .menuitem:hover .foodframe {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 0.72s;
+  transition: 0.5s ease-in;
+}
+.Lunch .LunchFrame .menuitem:hover .menutext {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.65s;
+}
+.Lunch .LunchFrame .menuitem .foodframe {
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.Lunch .LunchFrame .menuitem .foodframe img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Lunch .LunchFrame .menuitem .menutext {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  visibility: 0;
+  opacity: 0;
+}
+.Lunch .LunchFrame .menuitem .menutext h1 {
+  font-family: Calistoga;
+  color: white;
+  font-size: 1.5rem;
+  transform: rotateY(-180deg);
+  margin-bottom: 0;
+  overflow-x: scroll;
+}
+.Lunch .LunchFrame .menuitem .menutext .Commands button {
+  border: 0px;
+  background-color: #DC5F00;
+  color: black;
+  transform: rotateY(-180deg);
+  font-size: 1.1rem;
+  padding: 8px;
+  font-family: Calistoga;
+  color: white;
+  width: 200px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.Lunch .LunchFrame .menuitem .menutext .Commands button:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+.Lunch .LunchFrame .menuitem .menutext p {
+  padding: 20px;
+  margin-top: 0;
+  text-wrap: wrap;
+  text-align: justify;
+  font-family: Calistoga;
+  font-size: 0.8rem;
+  transform: rotateY(-180deg);
+  color: white;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+.Dinner {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.Dinner .DinnerFrame {
+  width: 80%;
+  height: 90%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  animation: slideinL linear;
+  animation-timeline: view();
+  animation-range: 10px 36%;
+}
+.Dinner .DinnerFrame .menuitem {
+  height: 200px;
+  width: 250px;
+  background-color: #101010;
+  box-shadow: 0px 5px 10px;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+.Dinner .DinnerFrame .menuitem:hover {
+  background-color: #242424;
+  border: 0px solid #CF0A0A;
+  transform: rotateY(180deg);
+  transition: 1s ease-in-out;
+  cursor: default;
+}
+.Dinner .DinnerFrame .menuitem:hover .foodframe {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 0.59s;
+  transition: 0.5s ease-in;
+}
+.Dinner .DinnerFrame .menuitem:hover .menutext {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.65s;
+}
+.Dinner .DinnerFrame .menuitem .foodframe {
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.Dinner .DinnerFrame .menuitem .foodframe img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Dinner .DinnerFrame .menuitem .menutext {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  visibility: 0;
+  opacity: 0;
+}
+.Dinner .DinnerFrame .menuitem .menutext h1 {
+  font-family: Calistoga;
+  color: white;
+  font-size: 1.5rem;
+  transform: rotateY(-180deg);
+  margin-bottom: 0;
+  overflow-x: scroll;
+}
+.Dinner .DinnerFrame .menuitem .menutext .Commands button {
+  border: 0px;
+  background-color: #DC5F00;
+  color: black;
+  transform: rotateY(-180deg);
+  font-size: 1.1rem;
+  padding: 8px;
+  font-family: Calistoga;
+  color: white;
+  width: 200px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.Dinner .DinnerFrame .menuitem .menutext .Commands button:hover {
+  cursor: pointer;
+  filter: brightness(50%);
+}
+.Dinner .DinnerFrame .menuitem .menutext p {
+  padding: 20px;
+  margin-top: 0;
+  text-wrap: wrap;
+  text-align: justify;
+  font-family: Calistoga;
+  font-size: 0.8rem;
+  transform: rotateY(-180deg);
+  color: white;
+  height: 100px;
+  overflow-y: scroll;
+}
+
+hr {
+  width: 50%;
+}
+
+.Mission {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.Mission .MissionFrame {
+  width: 90%;
+  height: 100%;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  animation: rollout linear;
+  animation-range: 10px 36%;
+  animation-timeline: view();
+}
+.Mission .MissionFrame div {
+  height: 100%;
+  width: 400px;
+  background-color: #101010;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 20px 20px black;
+}
+.Mission .MissionFrame div article {
+  height: 100%;
+  width: 100%;
+}
+.Mission .MissionFrame div .img {
+  height: 400px;
+}
+.Mission .MissionFrame div .img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Mission .MissionFrame div .text {
+  font-family: Calistoga;
+  text-align: center;
+  font-size: 4rem;
+}
+.Mission .MissionFrame div .text h1 {
+  font-family: Calistoga;
+  color: white;
+  margin-bottom: 0;
+}
+.Mission .MissionFrame div .text h1 span {
+  color: red;
+}
+.Mission .MissionFrame div .text p {
+  font-size: 0.8rem;
+  color: white;
+  text-wrap: wrap;
+  padding: 20px;
+  text-align: justify;
+}
+.Mission .MissionFrame div .text .text2 {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.Values {
+  height: 80vh;
+  background-color: #101010;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Values .ValueFrame {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: slideup linear;
+  animation-range: 10px 36%;
+  animation-timeline: view();
+}
+.Values .ValueFrame div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  font-family: Calistoga;
+  color: white;
+}
+.Values .ValueFrame div h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+}
+.Values .ValueFrame div h1 span {
+  color: #CF0A0A;
+}
+.Values .ValueFrame div p {
+  margin-top: 0;
+  font-size: 1.5rem;
+  text-wrap: wrap;
+  width: 80%;
+  text-align: center;
+}
+
+.Vision {
+  height: 100vh;
+}
+
+.ContactFrame {
+  height: 100vh;
+}
+
+.OrderFrame {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.OrderFrame aside {
+  width: 100%;
+  height: 100%;
+}
+.OrderFrame .img {
+  height: 100%;
+  width: 100%;
+  text-align: right;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.OrderFrame .img img {
+  height: 80%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.OrderFrame .leftanimation {
+  animation: slideinR linear;
+  animation-timeline: view();
+  animation-range: 10px 36%;
+}
+.OrderFrame .rightanimation {
+  animation: slideinL linear;
+  animation-timeline: view();
+  animation-range: 10px 36%;
+}
+.OrderFrame .textframe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.OrderFrame .textframe .text {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  background-color: #181818;
+  height: 80%;
+  width: 100%;
+  padding: 30px;
+}
+.OrderFrame .textframe .text #InfoForm {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  overflow-y: scroll;
+  padding: 20px;
+}
+.OrderFrame .textframe .text #InfoForm label {
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  font-family: Calistoga;
+}
+.OrderFrame .textframe .text #InfoForm input {
+  color: white;
+  background-color: #181818;
+  border: 1px solid #CF0A0A;
+  border-radius: 20px;
+  box-shadow: 0px 5px 5px #131313;
+  width: 80%;
+  padding: 10px;
+}
+.OrderFrame .textframe .text #InfoForm .TwoWay {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+}
+.OrderFrame .textframe .text #InfoForm .TwoWay aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.OrderFrame .textframe .text #InfoForm .SUBMIT {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 30px;
+}
+.OrderFrame .textframe .text #InfoForm .SUBMIT button {
+  padding: 10px;
+  width: 200px;
+  font-family: Calistoga;
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: 1px solid red;
+  color: white;
+  border-radius: 20px;
+}
+.OrderFrame .textframe .text #InfoForm .SUBMIT button:hover {
+  border: 1px solid #242424;
+  color: red;
+  background-color: #101010;
+}
+.OrderFrame .textframe .text ul {
+  width: 80%;
+  height: 80%;
+  overflow-y: scroll;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+.OrderFrame .textframe .text ul li {
+  margin-top: 20px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #101010;
+  padding: 10px;
+  color: white;
+  font-family: Calistoga;
+  border-radius: 10px;
+  box-shadow: 0px 5px 5px #131313;
+}
+.OrderFrame .textframe .text ul li button {
+  background-color: #CF0A0A;
+  border: 0px;
+  height: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: circle();
+          clip-path: circle();
+}
+.OrderFrame .textframe .text ul li button:hover {
+  background-color: #242424;
+  color: red;
+  font-weight: bold;
+  cursor: pointer;
+}
+.OrderFrame .textframe .text ul .TotalPrice {
+  text-align: center;
+  padding: 10px;
+}
+.OrderFrame .textframe .text h1 {
+  width: 80%;
+  text-align: left;
+  color: white;
+  font-size: 3rem;
+  font-family: Calistoga;
+  margin: 0;
+}
+.OrderFrame .textframe .text h1 span {
+  color: #CF0A0A;
+}
+.OrderFrame .textframe .text p {
+  text-wrap: wrap;
+  font-size: 1rem;
+  width: 80%;
+  font-family: Calistoga;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CF0A0A;
+  padding: 10px;
+  font-weight: bold;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  gap: 1rem;
+}
+footer ul li a {
+  color: #101010;
+  color: #EEEEEE;
+  text-decoration: none;
+}
+footer ul li a:hover {
+  color: #101010;
+}
+
+@keyframes slideinL {
+  from {
+    transform: translateX(-1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideinR {
+  from {
+    transform: translateX(1000px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slideup {
+  from {
+    transform: translateY(1000px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+@keyframes rollout {
+  from {
+    height: 0;
+  }
+  to {
+    height: 100%;
+  }
+}
+@keyframes rollup {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 0;
+  }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 450px) {
+  nav ul {
+    gap: 1rem;
+    overflow-x: scroll;
+  }
+  nav ul li img {
+    height: 30px;
+    width: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  nav ul li a {
+    font-size: 0.5rem;
+    color: #EEEEEE;
+    text-decoration: none;
+  }
+  nav ul li a:hover {
+    color: #101010;
+  }
+  header {
+    height: 30vh;
+  }
+  header .Banner .BannerFrame {
+    height: 60%;
+    width: 80%;
+    color: #EEEEEE;
+  }
+  header .Banner .BannerFrame br {
+    display: none;
+  }
+  header .Banner .BannerFrame h1 {
+    font-size: 1rem;
+    margin: 0;
+    font-family: Calistoga;
+  }
+  header .Banner .BannerFrame h2 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  header .Banner .BannerFrame span {
+    color: #CF0A0A;
+  }
+  header .Banner .BannerFrame p {
+    margin: 0;
+    color: #DC5F00;
+    font-weight: bold;
+    margin-left: 0%;
+    font-family: Calistoga;
+    font-size: 0.3rem;
+  }
+  header .Banner .BannerFrame .subheading {
+    width: 50%;
+    text-wrap: wrap;
+  }
+  header .Banner .BannerFrame .HolderFrame {
+    width: 40%;
+    padding: 0%;
+    margin-left: 0;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+  }
+  header .Banner .BannerFrame .HolderFrame button {
+    height: 10px;
+    width: 10px;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+    background-color: #CF0A0A;
+    border: 0px;
+    font-size: 0.1rem;
+    font-family: Calistoga;
+    color: white;
+  }
+  header .Banner .BannerFrame .HolderFrame button i {
+    font-size: 0.1rem;
+  }
+  header .Banner .BannerFrame .HolderFrame button:hover {
+    cursor: pointer;
+    background-color: #101010;
+  }
+  header .Banner .BannerFrame .HolderFrame button:hover i {
+    color: #CF0A0A;
+  }
+  .NextFrame {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .NextFrame aside {
+    width: 100%;
+    height: 100%;
+  }
+  .NextFrame .img {
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .NextFrame .img img {
+    height: 80%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .NextFrame .textframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    overflow: hidden;
+  }
+  .NextFrame .textframe .text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    background-color: #181818;
+    overflow-y: scroll;
+    height: 80%;
+    width: 100%;
+    padding: 15px;
+  }
+  .NextFrame .textframe .text br {
+    display: none;
+  }
+  .NextFrame .textframe .text h1 {
+    width: 80%;
+    text-align: left;
+    color: white;
+    font-size: 0.7rem;
+    font-family: Calistoga;
+    margin: 0;
+  }
+  .NextFrame .textframe .text h1 span {
+    color: #CF0A0A;
+  }
+  .NextFrame .textframe .text p {
+    text-wrap: wrap;
+    font-size: 0.25rem;
+    width: 80%;
+    font-family: Calistoga;
+    color: white;
+  }
+  .responsive .scrollmenu .menu .menuitem {
+    animation: slideinL linear 1s;
+  }
+  .NextFrame2 {
+    height: 20vh;
+    gap: 30px;
+  }
+  .NextFrame2 .textholder {
+    width: 80%;
+    color: white;
+  }
+  .NextFrame2 .textholder h1 {
+    font-size: 3rem;
+    font-family: Calistoga;
+    margin: 0;
+  }
+  .NextFrame2 .textholder p {
+    font-size: 1rem;
+    text-wrap: wrap;
+    width: 50%;
+  }
+  .NextFrame2 .scrollmenu {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .NextFrame2 .scrollmenu .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    animation: slideinL linear;
+    animation-timeline: view();
+    animation-range: 10px 15%;
+    gap: 10px;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem {
+    background-color: #181818;
+    position: relative;
+    display: flex;
+    box-shadow: 0px 5px 10px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30px;
+    padding-bottom: 30px;
+    width: 30px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem:hover {
+    background-color: #242424;
+    border: 0px solid #CF0A0A;
+    transform: rotateY(180deg);
+    transition: 1s ease-in-out;
+    cursor: default;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem:hover .img {
+    opacity: 0;
+    visibility: hidden;
+    transition-delay: 0.56s;
+    transition: 0.5s ease-in;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem:hover .menutext {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0.65s;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem .img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-clip-path: circle();
+            clip-path: circle();
+    opacity: 1;
+    visibility: visible;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem .img img {
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem .menutext p {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+    text-wrap: wrap;
+    text-align: justify;
+    font-family: Calistoga;
+    font-size: 0.2rem;
+    transform: rotateY(-180deg);
+    color: white;
+    height: 100%;
+    margin-top: 0;
+    overflow-y: scroll;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem .menutext h1 {
+    font-size: 0.3rem;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem .menutext .Commands button {
+    border: 0px;
+    background-color: #DC5F00;
+    color: black;
+    transform: rotateY(-180deg);
+    font-size: 0.2rem;
+    padding: 6px;
+    font-family: Calistoga;
+    color: white;
+    width: 25px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem .menutext .Commands button:hover {
+    cursor: pointer;
+    filter: brightness(50%);
+  }
+  .NextFrame2 .scrollmenu .menu .menuitem .menutext .Commands button:hover .menuitem {
+    background-color: #CF0A0A;
+  }
+  .Breakfast {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .Breakfast .BreakfastFrame {
+    width: 100%;
+    padding: 0;
+    animation: slideinL 1s ease;
+  }
+  .Breakfast .BreakfastFrame .menuitem {
+    height: 30px;
+    width: 30px;
+  }
+  .Breakfast .BreakfastFrame .menuitem img {
+    height: 100%;
+    width: 100%;
+  }
+  .Breakfast .BreakfastFrame .menuitem .menutext h1 {
+    font-size: 0.3rem;
+    padding: 5px;
+    margin: 10px;
+  }
+  .Breakfast .BreakfastFrame .menuitem .menutext p {
+    font-size: 0.2rem;
+    margin: 0;
+    height: 100%;
+    padding: 5px;
+    padding-top: 0;
+    z-index: -1;
+  }
+  .Breakfast .BreakfastFrame .menuitem .menutext .Commands button {
+    font-size: 0.3rem;
+    width: 40px;
+    padding: 5px;
+  }
+  .Lunch {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .Lunch .LunchFrame {
+    width: 100%;
+    padding: 0;
+  }
+  .Lunch .LunchFrame .menuitem {
+    height: 30px;
+    width: 30px;
+  }
+  .Lunch .LunchFrame .menuitem img {
+    height: 100%;
+    width: 100%;
+  }
+  .Lunch .LunchFrame .menuitem .menutext h1 {
+    font-size: 0.3rem;
+    padding: 5px;
+    margin: 10px;
+  }
+  .Lunch .LunchFrame .menuitem .menutext p {
+    font-size: 0.2rem;
+    margin: 0;
+    height: 100%;
+    padding: 5px;
+    padding-top: 0;
+    z-index: -1;
+  }
+  .Lunch .LunchFrame .menuitem .menutext .Commands button {
+    font-size: 0.3rem;
+    width: 40px;
+    padding: 5px;
+  }
+  .Dinner {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .Dinner .DinnerFrame {
+    width: 100%;
+    padding: 0;
+    animation: slideinL 1s ease;
+  }
+  .Dinner .DinnerFrame .menuitem {
+    height: 30px;
+    width: 30px;
+  }
+  .Dinner .DinnerFrame .menuitem img {
+    height: 100%;
+    width: 100%;
+  }
+  .Dinner .DinnerFrame .menuitem .menutext h1 {
+    font-size: 0.3rem;
+    padding: 5px;
+    margin: 10px;
+  }
+  .Dinner .DinnerFrame .menuitem .menutext p {
+    font-size: 0.2rem;
+    margin: 0;
+    height: 100%;
+    padding: 5px;
+    padding-top: 0;
+    z-index: -1;
+  }
+  .Dinner .DinnerFrame .menuitem .menutext .Commands button {
+    font-size: 0.3rem;
+    width: 40px;
+    padding: 5px;
+  }
+  .Mission {
+    height: 30vh;
+  }
+  .Mission .MissionFrame {
+    animation: rollout ease 1s;
+  }
+  .Mission .MissionFrame div {
+    width: 80px;
+    box-shadow: 0px 20px 5px black;
+  }
+  .Mission .MissionFrame div .text {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+  }
+  .Mission .MissionFrame div .text .text2 {
+    font-size: 0.5rem;
+  }
+  .Mission .MissionFrame div .text h1 {
+    font-size: 0.5rem;
+  }
+  .Mission .MissionFrame div .text h1 span {
+    font-size: 0.5rem;
+  }
+  .Mission .MissionFrame div .text p {
+    height: 100%;
+    width: 50%;
+    padding: 10px;
+    font-size: 0.18rem;
+    overflow-y: scroll;
+  }
+  .Mission .MissionFrame div .img {
+    height: 50px;
+  }
+  .Mission .MissionFrame .text2 {
+    font-size: 0.1rem;
+    text-wrap: wrap;
+  }
+  .Mission .responsive_banner div {
+    animation: slideup 1s;
+  }
+  .Values {
+    height: 30vh;
+  }
+  .Values .ValueFrame {
+    animation: slideinL 1s;
+  }
+  .Values .ValueFrame div h1 {
+    font-size: 1rem;
+  }
+  .Values .ValueFrame div p {
+    font-size: 0.5rem;
+  }
+  .OrderFrame {
+    height: 30vh;
+  }
+  .OrderFrame .textframe {
+    width: 100%;
+    height: 90%;
+  }
+  .OrderFrame .textframe .text {
+    padding: 5px;
+    width: 100%;
+  }
+  .OrderFrame .textframe .text #InfoForm {
+    padding: 0;
+    margin: 0;
+  }
+  .OrderFrame .textframe .text #InfoForm .TwoWay {
+    padding: 0;
+  }
+  .OrderFrame .textframe .text #InfoForm .TwoWay aside {
+    margin: 0;
+    padding: 0;
+  }
+  .OrderFrame .textframe .text #InfoForm .TwoWay aside label {
+    margin: 0;
+  }
+  .OrderFrame .textframe .text #InfoForm .TwoWay br {
+    display: none;
+  }
+  .OrderFrame .textframe .text #InfoForm br {
+    display: none;
+  }
+  .OrderFrame .textframe .text #InfoForm label {
+    font-size: 0.2rem;
+    margin: 0;
+  }
+  .OrderFrame .textframe .text #InfoForm input {
+    width: 80%;
+    height: 5px;
+    padding: 0;
+    margin-bottom: 5px;
+  }
+  .OrderFrame .textframe .text #InfoForm .SUBMIT {
+    margin: 0;
+    padding: 5px;
+  }
+  .OrderFrame .textframe .text #InfoForm .SUBMIT button {
+    font-size: 0.2rem;
+    padding: 3px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-radius: 0;
+    width: 50px;
+  }
+  .OrderFrame .textframe .text h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 0.6rem;
+  }
+  .OrderFrame .textframe .text h1 span {
+    font-size: 0.8rem;
+  }
+  .OrderFrame .textframe .text ul {
+    margin-top: 10px;
+    width: 150px;
+    gap: 10px;
+  }
+  .OrderFrame .textframe .text ul div {
+    width: 100%;
+  }
+  .OrderFrame .textframe .text ul div li {
+    font-size: 0.3rem;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .OrderFrame .textframe .text ul div li button {
+    font-size: 0.2rem;
+  }
+  .OrderFrame .textframe .text .TotalPrice {
+    font-size: 0.3rem;
+  }
+  .OrderFrame .img {
+    height: 70%;
+    width: 100%;
+  }
+  .OrderFrame .leftanimation {
+    animation: slideinR 1s ease;
+  }
+  .OrderFrame .rightanimation {
+    animation: slideinL 1s ease;
+  }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #CF0A0A;
+    padding: 5px;
+    font-weight: bold;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 1rem;
+  }
+  footer ul li {
+    padding: 0;
+  }
+  footer ul li a {
+    color: #101010;
+    color: #EEEEEE;
+    text-decoration: none;
+    font-size: 0.5rem;
+    padding: 0;
+  }
+  footer ul li a:hover {
+    color: #101010;
+  }
+}/*# sourceMappingURL=styles.css.map */
